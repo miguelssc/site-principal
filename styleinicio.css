@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap'){}
+@import url('https://fonts.googleapis.com/css2?family=Tauri&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap') {}
+
+body{
+    margin: 0;
+    
+}
+#conteudo1{
+    background-color: #E8EFF2;
+    height: 1000px;
+}
+#logo{
+    
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo2{
+    display: flex;
+   justify-content: space-around ;
+}
+#titulo{
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 10px;
+}
+#usuario{
+   
+    margin-top: 10px;
+    height: 500px;
+    width: 1600px;
+    margin-left: 100px;
+    border-radius: 30px;
+    background-color: #5263EB;
+}
+#ft{
+  
+    display: flex;
+    justify-content: center;
+}
+#texto{
+    font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+}
+#funçao{
+    display: flex;
+   justify-content: space-around;
+   margin-top: 120px;
+  
+   
+
+}
+#funçao1{
+  
+   width: 250px;
+   height: 250px;
+   border-radius: 40px;
+   background-color: #5263EB;
+}
+#funçao2{
+   
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    background-color: #5263EB;
+ }
+ #funçao3{
+  
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    background-color: #5263EB;
+ }
+#conteudo2{
+    background-color: rgb(177, 221, 221);
+    height: 1000px;
+  width: 100%;
+}
+#conteudo3{
+    background-color: rgb(13, 19, 19);
+    height: 1000px;
+  width: 100%;
+}
+#conteudo4{
+    background-color: rgb(6, 7, 7);
+    height: 1000px;
+  width: 100%;
+}
+#conteudo5{
+    background-color: rgb(158, 247, 247)2, 15, 15);
+    height: 1000px;
+  width: 100%;
+}
+#conteudo6{
+    background-color: rgb(29, 31, 31);
+    height: 1000px;
+  width: 100%;
+}
+#conteudo7{
+    background-color: rgb(255, 255, 255);
+    height: 1000px;
+  width: 100%;
+}
+@media (max-width: 767px)
+.elementor-2376 .elementor-element.elementor-element-095f80f .elementor-heading-title {
+    font-size: 28px;
+}
