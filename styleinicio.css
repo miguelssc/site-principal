@@ -1,114 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap'){}
-@import url('https://fonts.googleapis.com/css2?family=Tauri&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap') {}
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+ 
+body {
     margin: 0;
-    
+    font-family: 'Tauri', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
-#conteudo1{
-    background-color: #E8EFF2;
-    height: 1000px;
+ 
+/* Conteúdo principal */
+#conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5, #conteudo6, #conteudo7 {
+    transition: background-color 0.3s ease;
 }
-#logo{
-    
+ 
+/* Cabeçalho e logo */
+#logo {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-#logo2{
+ 
+#logo2 {
     display: flex;
-   justify-content: space-around ;
+    justify-content: space-around;
+    align-items: center;
 }
-#titulo{
-    font-family: "Tinos", serif;
+ 
+#titulo {
+    font-family: 'Tinos', serif;
     font-weight: 700;
     font-style: italic;
     margin-left: 10px;
+    color: #5263EB;
 }
-#usuario{
-   
-    margin-top: 10px;
+ 
+/* Estilização do usuário */
+#usuario {
+    margin: 20px auto;
     height: 500px;
-    width: 1600px;
-    margin-left: 100px;
+    max-width: 90%;
     border-radius: 30px;
     background-color: #5263EB;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
 }
-#ft{
-  
+ 
+#usuario:hover {
+    transform: translateY(-5px);
+}
+ 
+#ft {
     display: flex;
     justify-content: center;
 }
-#texto{
-    font-family: "Tauri", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-   display: flex;
-   justify-content: center;
-   font-size: 30px;
+ 
+#texto p {
+    font-size: 2em;
+    color: #fff;
 }
-#funçao{
+ 
+/* Funções */
+#funçao {
     display: flex;
-   justify-content: space-around;
-   margin-top: 120px;
-  
-   
-
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
-#funçao1{
-  
-   width: 250px;
-   height: 250px;
-   border-radius: 40px;
-   background-color: #5263EB;
-}
-#funçao2{
-   
-    width: 250px;
+ 
+#funçao1, #funçao2, #funçao3 {
+    width: 300px;
     height: 250px;
     border-radius: 40px;
     background-color: #5263EB;
- }
- #funçao3{
-  
-    width: 250px;
-    height: 250px;
-    border-radius: 40px;
-    background-color: #5263EB;
- }
-#conteudo2{
-    background-color: rgb(177, 221, 221);
-    height: 1000px;
-  width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    justify-content: space-between;
+    margin: 10px; /* Reduz a margem para diminuir a distância */
 }
-#conteudo3{
-    background-color: rgb(13, 19, 19);
-    height: 1000px;
-  width: 100%;
+ 
+#funçao1:hover, #funçao2:hover, #funçao3:hover {
+    background-color: #6e7ff3;
+    transform: scale(1.05);
 }
-#conteudo4{
-    background-color: rgb(6, 7, 7);
-    height: 1000px;
-  width: 100%;
-}
-#conteudo5{
-    background-color: rgb(158, 247, 247)2, 15, 15);
-    height: 1000px;
-  width: 100%;
-}
-#conteudo6{
-    background-color: rgb(29, 31, 31);
-    height: 1000px;
-  width: 100%;
-}
-#conteudo7{
-    background-color: rgb(255, 255, 255);
-    height: 1000px;
-  width: 100%;
-}
-@media (max-width: 767px)
-.elementor-2376 .elementor-element.elementor-element-095f80f .elementor-heading-title {
-    font-size: 28px;
-}
+ 
+/* Media Queries */
+@media (max-width: 767px) {
+    #logo, #usuario, #funçao {
+        flex-direction: column;
+    }
+ 
+    #usuario, #funçao div {
+        width: auto;
+        margin: 10px;
+    }
