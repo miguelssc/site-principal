@@ -105,6 +105,9 @@ align-items: center;
    }
 #conteudo2{
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #titulo{
     width: 500px;
@@ -112,21 +115,17 @@ align-items: center;
     justify-content: center;
     text-align: center;
     padding-top: 100px;
-    padding-left: 150px;
+    
 
 }
 #texto{
     width: 500px;
-    margin-left: 40px;
-    padding-left: 150px;
+    
     padding-bottom: 100px;
     text-align: center;
     font-size: 20px;
 }
-#conteudo3{
-    background-color: #6b2222;
-    height: 400px;
-}
+
 h1{
     font-size: 50px;
 }

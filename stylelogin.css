@@ -9,7 +9,7 @@ body{
     margin-top: 170px;
     width: 300px;
     height: 500px;
-    background: #2c2c2c;
+    background: #15172b;
     padding: 47px;
     padding-bottom: 57px;
     color: #fff;
@@ -74,7 +74,7 @@ body{
     width: 150px !important;
     margin-left: 76px !important;
     margin-top: 50px !important;
-    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    background: linear-gradient(to right, #4fc3f7, #01579b);
     color: #fff;
     padding: 16px !important;
   }
@@ -117,6 +117,22 @@ body{
     font-size: 16px;
     padding-top: 40px;
     animation: bounce 1s;
+  }
+  .input:focus ~ .email {
+    transform: translateY(8px);
+  }
+  
+  .input:focus ~ .email {
+    transform: translateY(-30px) translateX(10px) scale(0.6);
+  }
+  
+  .input:not(:focus) ~ .email {
+    color: #808097;
+    
+  }
+  
+  .input:focus ~ .email {
+    color: #ff0000;
   }
   
   @media only screen and (max-width: 600px) {
