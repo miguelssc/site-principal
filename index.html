@@ -1,29 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="stylelogin.css">
+    <title>fila virtual</title>
+    <link rel="stylesheet" href="styleinicio.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <div class="login wrap">
-        <div class="h1">Login</div>
-        <div id="centralizar">
-            <input
-                pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
-                placeholder="Email" id="email" name="email" type="text">
-            <input placeholder="Password" id="password" name="password" type="password">
-            <input value="Login" class="btn" type="submit">
-
+    <div class="navbar opacity" id="navbar">
+        <div><img src="img/CORAÇAO_AZUL-removebg-preview.png" alt="" style="width: 300px; ;"></div>
+        <div id="icones">
+            <a id="home" href="#navbar">Home</a>
+            <a id="sobre" href="#conteudo2">Sobre</a>
+            <a id="contato" href="#contato">contato</a>
         </div>
-        <div id="cadastro"> <a href="cadastro.html">
-                <p>cadaste-se</p>
-            </a></div>
     </div>
+    <div id="conteudo1">
+        <div class="card">
+            <div class="card-details">
+                <p class="text-title">Bem-vindo ao Agiliza!</p>
+                <p class="text-body"> Nosso site é dedicado ao seu bem-estar, oferecendo uma variedade de opções para
+                    tornar suas consultas mais fáceis e eficientes. Explore e aproveite! Clique em login para desfrutar
+                </p>
+            </div>
+            <a href="inicio.html" class="card-button">Login</a>
+        </div>
 
+
+    </div>
+    <div id="conteudo2">
+        <div id="tudo">
+            <div id="titulo">
+                <h1>
+                    Agiliza: Simplificando a Sua Vida
+                </h1>
+            </div>
+            <div id="texto">
+                <p>""
+                    O Agiliza é muito mais do que um simples site. É a chave para uma vida mais fácil e prática. Com
+                    nossa plataforma inovadora e interativa, você pode agendar consultas médicas e acessar laudos de
+                    forma rápida e eficiente.
+                    Na Wintech, estamos dedicados a melhorar a experiência de todos os nossos usuários. Conte conosco
+                    para tornar sua jornada mais suave e eficaz.
+                    Junte-se ao Agiliza e simplifique sua vida hoje mesmo
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div id="fts-container">
+        <!-- Mensagem -->
+        <div id="mensagem">
+            <h1>Sobre a Wintech</h1>
+            
+            <p>Venha descobrir a essência da WinTech! Assista ao nosso vídeo e mergulhe no mundo da inovação conosco.</p>
+        </div>
+        <!-- Div onde o vídeo será incorporado -->
+        <div id="fts">
+            <!-- Tag iframe para incorporar o vídeo do YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X-0NSw3WqVg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
 </body>
+<footer id="contato">
+    <p>Email: equipe.wintech@gmail.com</p>
+    <p>Telefone: (XX) XXXX-XXXX</p>
+    <p>Siga-nos no Instagram: <a href="https://www.instagram.com/equipe.wintech/">@equipe.wintech</a></p>
+</footer>
 
 </html>

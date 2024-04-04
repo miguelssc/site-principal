@@ -1,56 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fila virtual</title>
-    <link rel="stylesheet" href="styleinicio.css">
+    <title>login</title>
+    <link rel="stylesheet" href="stylelogin.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <div><img src="img/CORAÇAO_AZUL-removebg-preview.png" alt="" style="width: 300px; ;"></div>
-        <div id="icones">
-            <a id="home" href="#hobby">home</a>
-            <a id="sobre" href="#conteudo1">sobre</a>
-            <a id="contato" href="#conteudo2">contato</a>
-        </div>
-    </div>
-    <div id="conteudo1">
-        <div class="card">
-            <div class="card-details">
-                <p class="text-title">Bem-vindo ao Agiliza!</p>
-                <p class="text-body"> Nosso site é dedicado ao seu bem-estar, oferecendo uma variedade de opções para
-                    tornar suas consultas mais fáceis e eficientes. Explore e aproveite! Clique em login para desfrutar
-                </p>
-            </div>
-            <a href="index.html"><button class="card-button">Login</a></button>
-        </div>
+    <div class="login wrap">
+        <div class="h1">Login</div>
+        <div id="centralizar">
+            <input
+                pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                placeholder="Email" id="email" name="email" type="text">
+            <input placeholder="Password" id="password" name="password" type="password">
+            <input value="Login" class="btn" type="submit">
 
-
-    </div>
-    <div id="conteudo2">
-        <div id="tudo">
-            <div id="titulo">
-                <h1>
-                    Agiliza: Simplificando a Sua Vida
-                </h1>
-            </div>
-            <div id="texto">
-                <p>
-                    O Agiliza é muito mais do que um simples site. É a chave para uma vida mais fácil e prática. Com
-                    nossa plataforma inovadora e interativa, você pode agendar consultas médicas e acessar laudos de
-                    forma rápida e eficiente.
-                    Na Wintech, estamos dedicados a melhorar a experiência de todos os nossos usuários. Conte conosco
-                    para tornar sua jornada mais suave e eficaz.
-                    Junte-se ao Agiliza e simplifique sua vida hoje mesmo
-                </p>
-            </div>
         </div>
-
+        <div id="cadastro"> <a href="cadastro.html">
+                <p>cadastre-se</p>
+            </a></div>
     </div>
-    
+
 </body>
 
 </html>

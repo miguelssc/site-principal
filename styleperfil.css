@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+
+#conteudo {
+    width: 100%;
+    height: 979px;
+
+    display: flex;
+
+}
+
+#box1 {
+    width: 600px;
+    height: 979px;
+    
+}
+
+#box2 {
+    width: 1000px;
+    height: 979px;
+    
+    margin-left: 100px;
+    
+}
+#perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
+#informaçao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#nome{
+    
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+#data{
+    
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+#box3{
+  
+    display: flex;
+    margin-top: 300px;
+    
+    justify-content: center;
+}
+#box4{
+    
+    display: flex;
+    justify-content: center;
+}

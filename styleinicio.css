@@ -1,8 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
 }
+
 .navbar{
     overflow: hidden;
     display: flex;
@@ -13,6 +17,8 @@ body{
     width: 100%;
     margin: 0;
     z-index: 2;
+    background-color: transparent; /* Defina a cor de fundo desejada */
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
 }
 .navbar a{
     float: left;
@@ -22,6 +28,17 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
+.navbar.colored {
+    background-color: #fff; /* Altere a cor conforme necessário */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione sombra se desejar */
+}
+
+
+.navbar.opacity {
+    background-color: #ffffff6e;
+    backdrop-filter: saturate(180%) blur(4px);
+  }
+
 .navbar a:hover{
     
     color: black;
@@ -31,15 +48,18 @@ body{
     justify-content: space-around;
     width: 700px;
     align-items: center;
+    
 }
-#conteudo1{
+
+#conteudo1 {
     height: 800px;
-background-image: url(img/doctor-6701410_1920.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
+    background-image: url(img/doctor-6701410_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed; /* Torna a imagem de fundo fixa */
 }
 .card {
     margin-left: 200px;
@@ -64,6 +84,7 @@ align-items: center;
    }
    
    .card-button {
+    text-align: center;
     transform: translate(-50%, 125%);
     width: 60%;
     border-radius: 1rem;
@@ -91,6 +112,7 @@ align-items: center;
    .text-title {
     font-size: 1.5em;
     font-weight: bold;
+    font-family: "Noto Sans", sans-serif;
    }
    
    /*Hover*/
@@ -127,29 +149,92 @@ align-items: center;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
+    font-family: "Noto Sans", sans-serif;
+    padding-top: 100px;
+}
+/* Estilo para a div onde o vídeo será incorporado */
+#fts-container {
+    background: linear-gradient(to right, #4fc3f7, #01579b);
+    padding-top: 50px; /* Reduzir o espaço superior */
+    padding-bottom: 50px; /* Reduzir o espaço inferior */
+    margin-top: 100px; /* Reduzir a margem superior */
+    margin-bottom: 0; /* Remover a margem inferior */
+    display: grid;
+    grid-template-columns: 1fr; /* Definir uma única coluna por padrão */
+    align-items: center; /* Alinha itens verticalmente ao centro */
 }
 
+/* Estilo para o vídeo */
+#fts {
+    width: 90%; /* Reduzir a largura para 90% da tela */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-right: 0; /* Remover a margem direita */
+    margin-bottom: 50px; /* Adicionar margem inferior de 50px */
+}
 
+/* Estilo para a mensagem */
+#mensagem {
+    font-size: 24px; /* Tamanho da fonte da mensagem */
+    color: #fff; /* Cor do texto da mensagem */
+    margin: 50px; /* Adicionar margem de 50px em todas as direções */
+    padding-bottom: 20px; /* Reduzir o espaço inferior */
+}
+.underline::after {
+    content: "";
+    display: block;
+    width: 50%; /* Ajuste a largura do traço conforme necessário */
+    height: 2px; /* Ajuste a altura do traço conforme necessário */
+    background-color: black; /* Cor do traço */
+}
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 0; /* Remover a margem superior */
+    position: relative; /* Manter o posicionamento relativo */
+    z-index: 1; /* Definir uma z-index maior para sobrepor o conteúdo */
+}
 
-@media (max-width: 767px) {
-    #icones {
-        flex-direction: column;
+/* Estilo dos links do footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    /* Estilos para telas maiores que 767px (PC) */
+    #fts-container {
+        grid-template-columns: 1fr 1fr; /* Dividir em duas colunas */
     }
- 
-    #icones div {
-        width: auto;
-        margin: 10px;
+    
+    #fts {
+        justify-self: end; /* Alinhar o vídeo à direita */
+        width: 80%; /* Reduzir a largura para 80% da tela */
+        margin-right: 6px; /* Adicionar margem direita de 50px */
+        margin-bottom: 0; /* Remover a margem inferior */
+    }
+    
+    #mensagem {
+        justify-self: start; /* Alinhar a mensagem à esquerda */
+        font-size: 24px; /* Manter o tamanho da fonte */
+        margin-left: 150px; /* Adicionar margem esquerda de 50px */
+        margin-bottom: 200px; /* Remover a margem inferior */
     }
 }
+
 @media (max-width: 767px) {
-    #texto2 {
-        flex-direction: column;
+    /* Estilos para telas menores ou iguais a 767px (Celular) */
+    #fts {
+        width: 100%; /* Ocupar toda a largura disponível */
+        margin-left: 0; /* Remover a margem esquerda */
     }
- 
-    #texto2 div {
-        width: auto;
-        margin: 50px;
+    
+    #mensagem {
+        font-size: 20px; /* Reduzir o tamanho da fonte */
+        margin: 20px; /* Adicionar margem em todas as direções */
     }
 }
