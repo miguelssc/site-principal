@@ -3,12 +3,14 @@ body {
   justify-content: center;
   margin-top: 160px;
 }
-#cadastro{
- color: #eee;
- align-items: center;
- margin-left: 50px;
-margin-top: 10px;
+
+#cadastro {
+  color: #eee;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 10px;
 }
+
 a {
   text-decoration: none;
 }
@@ -26,10 +28,11 @@ a {
 
 @keyframes openForm {
   0% {
-      height: 0;
+    height: 0;
   }
+
   100% {
-      height: 500px;
+    height: 500px;
   }
 }
 
@@ -76,33 +79,6 @@ a {
   width: 100%;
 }
 
-.cut {
-  background-color: #15172b;
-  border-radius: 10px;
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  top: -20px;
-  transform: translateY(0);
-  transition: transform 200ms;
-  width: 76px;
-}
-
-.cut-short {
-  width: 50px;
-}
-
-.iLabel {
-  color: #65657b;
-  font-family: sans-serif;
-  left: 20px;
-  line-height: 14px;
-  pointer-events: none;
-  position: absolute;
-  transform-origin: 0 50%;
-  transition: transform 200ms, color 200ms;
-  top: 20px;
-}
 
 .submit {
   background: linear-gradient(to right, #4fc3f7, #01579b);

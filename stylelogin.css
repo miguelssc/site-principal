@@ -52,7 +52,7 @@ body{
     border: 0;
     outline: 0;
     width: 100%;
-    padding: 13px;
+    padding: 16px;
     margin: 40px 0 0 0;
     border-radius: 500px;
     font-weight: 600;
@@ -67,8 +67,24 @@ body{
     margin-bottom: -0px;
     font-size: 1.3em;
   }
-  
-  .btn {
+  #bnt{
+    width: 150px !important;
+    height: 40px !important;
+    margin-left: 76px !important;
+    margin-top: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    background: linear-gradient(to right, #4fc3f7, #01579b);
+    color: #fff;
+    border-radius: 30px;
+    animation: bounce1 1.3s;
+  }
+  a{
+    text-decoration: none;
+  }
+  #btn {
     display: flex;
     justify-content: center;
     width: 150px !important;
@@ -76,13 +92,12 @@ body{
     margin-top: 50px !important;
     background: linear-gradient(to right, #4fc3f7, #01579b);
     color: #fff;
-    padding: 16px !important;
+    border-radius: 30px;
   }
   
-  .btn:hover {
+  #bnt:hover {
     background: linear-gradient(144deg, #1e1e1e , 20%,#1e1e1e 50%,#1e1e1e );
     color: rgb(255, 255, 255);
-    padding: 16px !important;
     cursor: pointer;
     transition: all 0.4s ease;
   }
