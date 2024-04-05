@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    height: 100vh;
+  background-color: #bbe4e9;
+}
+#voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 20px;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.perguntas {
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#bnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #7bcbf0, #388dce);
+    color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
+
+#texto {
+    width: 200px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
